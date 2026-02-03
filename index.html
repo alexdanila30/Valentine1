@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Proposal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <main class="container">
+        <div class="card" id="proposal-card">
+            <h1 class="title">Vrei să fii partenera mea de Valentine's?</h1>
+            <div class="button-group">
+                <button id="btn-da" class="btn btn-primary">DA</button>
+                <button id="btn-nu" class="btn btn-secondary">NU</button>
+            </div>
+            <div id="tooltip" class="tooltip hidden">Mesaj random...</div>
+        </div>
+
+        <div class="success-container hidden" id="success-flow">
+            <h2 class="status-text" id="status-text">Se procesează răspunsul...</h2>
+            <div class="love-meter-wrapper">
+                <div class="love-meter-bar" id="love-meter"></div>
+            </div>
+            <p class="love-meter-percent" id="love-percent">0%</p>
+            <div id="final-content" class="hidden">
+                <img src="success-dog.png" alt="Happy Valentine" class="success-img">
+                <h1 class="final-message" id="final-message">ESTE OFICIAL! ❤️<br><span class="date">Ne vedem pe 14
+                        Februarie!</span></h1>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
